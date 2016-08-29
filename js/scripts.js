@@ -1,20 +1,20 @@
 function Pizza(size, toppings) {
   this.size = size;
   this.toppings = [];
-  this.price = 30;
+  this.price = 10;
 }
 
 var order = [];
 
 Pizza.prototype.SizeOfPizzaToPrice = function() {
   if (this.size === "small") {
-    this.price -= 10;
+    this.price += 5;
   } else if (this.size === "medium") {
-    this.price = 30;
+    this.price += 8;
   } else if (this.size === "large") {
     this.price += 10;
   } else {
-    this.price = 50;
+    this.price += 15;
   }
 }
 
@@ -32,16 +32,18 @@ $(document).ready(function() {
       toppings.push($(this).val());
     });
     var newPizza = new Pizza(pizzaSize);
-      console.log(newPizza);
     order.push(newPizza);
-
 
     for(i = 0;i < toppings.length; i ++) {
       newPizza.toppings.push(toppings[i]);
     }
     order[0].SizeOfPizzaToPrice();
-    alert(order[0].price);
-    console.log(newPizza);
+    var totalTotal = (toppings.length * 2) +(order[0].price)
+    console.log(totalTotal);
+
+    $(".price-results").append("the total price for this pizza is $ " + totalTotal);
+    $(".pizza-results").append("you ordered a " + pizzaSize + " pizza, topped with " + order[0].toppings)
+
 
   });
 })
