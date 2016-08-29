@@ -11,6 +11,6 @@ h1 {
   margin: 30px;
 }
 
-#show-toppings {
+.pizza-name {
   display: none;
 }

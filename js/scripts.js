@@ -38,20 +38,18 @@ $(document).ready(function() {
 }
     order[0].SizeOfPizzaToPrice();
     var totalTotal = (toppings.length * 2) +(order[0].price)
-    console.log(totalTotal);
 
     $("#right-column").show();
     $(".price-results").append("the total price for this pizza is $ " + totalTotal);
     $(".pizza-results").append("you ordered a " + pizzaSize + " pizza, topped with " + order[0].toppings);
+    console.log(newPizza.size);
+    $("ul.orders").prepend("<li class='name'>" + newPizza.size + "</li>");
+    console.log(newPizza.size);
 
-    $("ul.orders").append("<li><span class='pizza-title'>" + newPizza.size + "</span></li>");
+
+    $('.name').click(function() {
+      console.log("hello");
+      $(".ingred").text(newPizza.toppings);
+  })
       });
     })
-    $(".pizza-title").last().click(function() {
-      alert("hello")
-      $("#show-toppings").show().text(newPizza.toppings);
-
-
-
-
-  })
