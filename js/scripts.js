@@ -28,30 +28,30 @@ $(document).ready(function() {
     event.preventDefault();
     var pizzaSize = $("#size").val();
     var toppings = [];
-       $("input:checkbox[name=topping]:checked").each(function(){
+      $("input:checkbox[name=topping]:checked").each(function(){
       toppings.push($(this).val());
-    });
-    var newPizza = new Pizza(pizzaSize);
+});
+    var newPizza = new Pizza(pizzaSize)
     order.push(newPizza);
-
     for(i = 0;i < toppings.length; i ++) {
       newPizza.toppings.push(toppings[i]);
-    }
+}
     order[0].SizeOfPizzaToPrice();
     var totalTotal = (toppings.length * 2) +(order[0].price)
     console.log(totalTotal);
 
+    $("#right-column").show();
     $(".price-results").append("the total price for this pizza is $ " + totalTotal);
-    $(".pizza-results").append("you ordered a " + pizzaSize + " pizza, topped with " + order[0].toppings)
+    $(".pizza-results").append("you ordered a " + pizzaSize + " pizza, topped with " + order[0].toppings);
+
+    $("ul.orders").append("<li><span class='pizza-title'>" + newPizza.size + "</span></li>");
+      });
+    })
+    $(".pizza-title").last().click(function() {
+      alert("hello")
+      $("#show-toppings").show().text(newPizza.toppings);
 
 
-  });
-})
 
 
-
-
-
-
-
-  //
+  })

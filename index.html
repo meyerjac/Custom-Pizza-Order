@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <title>Pizza Order!</title>
   </head>
   <body>
-  <div class="container">
-      <h1>Order your pizza!</h1><br>
+      <img src="https://www.sixflags.com/sites/default/files/styles/subpage_banner/public/mn_dining_PepperoniPizza.jpg?itok=jwXR_b_G" alt="pizza"/>
+    <h1>Thankyou for visiting the Pizza Parlor!</h1>
+    <div class="row">
+      <div class="col-sm-4">
+        <br>
+        <p>
+          <strong>current order</strong>
+        </p>
         <form>
           <div class="size">
             <select class="form-control" id = "size">
@@ -21,7 +28,6 @@
             </select>
           </div>
           <br>
-
           <div class="toppings">
             <div class="checkbox">
             <label><input type="checkbox" value="pepperoni" name= "topping">Pepperoni</label>
@@ -43,18 +49,26 @@
             </div>
           </div>
           <br>
+          <button type="submit" id="orderButton" class = "btn btn-success" name="button"> Order your pizza </button>
+        </form>
+        <br>
+          <div class="price-results">
+            <strong>Price:</strong>
+          </div>
+          <hr>
+          <div class="pizza-results">
+          <strong>Pizza:</strong>
+         </div>
+         </div>
+         <div class="col-sm-4" id="right-column">
+           <br>
+           <p>
+              <strong>past orders</strong>
+           </p>
+           <ul class="orders">
 
-            <button type="submit" id="orderButton" class = "btn btn-success" name="button">Order your pizza</button>
-           </div>
-         </form>
-         <br>
-
-         <div class="price-results">
-             Price:
+           </ul>
         </div>
-        <div class="pizza-results">
-            Pizza:
-       </div>
       </div>
     </div>
   </body>
