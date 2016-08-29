@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Order!</title>
+  </head>
+  <body>
+  <div class="container">
+      <h1>Order your pizza!</h1><br>
+        <form>
+          <div class="size">
+            <select class="form-control" id = "size">
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+              <option value="large">Large</option>
+              <option value="extraLarge">Extra Large</option>
+            </select>
+          </div>
+          <br>
+
+          <div class="toppings">
+            <div class="checkbox">
+            <label><input type="checkbox" value="pepperoni" name= "topping">Pepperoni</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="Canadian Bacon" name= "topping">Canadian Bacon</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="Extra Cheese" name= "topping">extra cheese</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="Mushrooms" name= "topping">mushrooms</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="Olives" name= "topping">olives</label>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" value="Sardines" name= "topping">sardines</label>
+            </div>
+          </div>
+          <br>
+
+            <button type="submit" id="orderButton" class = "btn btn-success" name="button">Order your pizza</button>
+           </div>
+         </form>
+         <br>
+
+         <div class="price-results">
+             Price:
+        </div>
+        <div class="pizza-results">
+            Pizza:
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
