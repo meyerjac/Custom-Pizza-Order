@@ -31,11 +31,11 @@ _Our program will allow user to select size of crust they would like, and our pr
 * **example input** "small"
 * **example output** base price: $15
 
-_User can choose what toppings to go on their pizza, and our program will calculate price for the toppings toppings_
+_User can choose what toppings to go on their pizza, and our program will calculate price for the toppings_
 * **example input** pepperoni, pineapple, olives
 * **example output** $3
 
-_When user click our submit button, our program will calculate the pizza price and display to the webpage with price and details about the pizza order_
+_When user click 'order' button, our program will display to the webpage with the calculated price and details about the pizza order_
 * **example input** "small", "pepperoni"
 * **example output** your small pepperoni pizza will cost you $16
 
