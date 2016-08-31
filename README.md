@@ -1,4 +1,4 @@
-# _Portland Pizza _
+# _Portland Pizza_
 
 #### _This web application will allow people to customize a pizza order_
 
@@ -14,7 +14,7 @@ _This application is for a our Epicodus week 4 test. This application will allow
 
 ## Known Bugs
 
-_At this point, you cannon build a second pizza and make the UI look good.
+_At this point, you cannon build a second pizza and make the UI look good_
 
 ## Support and contact details
 
