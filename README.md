@@ -1,12 +1,12 @@
-# _Portland Pizza delivery_
+# _Portland Pizza _
 
 #### _This web application will allow people to customize a pizza order_
 
-#### By _**Jackson Meyer** on 8/25/2016_
+#### By _**Jackson Meyer** on 8/31/2016_
 
 ## Description
 
-_This application is for a school project in Portland and it is our week 4 test. This application will allow people to custom order pizzas, and see what they are getting_
+_This application is for a our Epicodus week 4 test. This application will allow people to custom order a pizza, see the price of that pizza and see what they are getting_
 
 ## Setup/Installation Requirements
 
@@ -14,7 +14,7 @@ _This application is for a school project in Portland and it is our week 4 test.
 
 ## Known Bugs
 
-_At this point, there are no known bugs! Woohoo_
+_At this point, you cannon build a second pizza and make the UI look good.
 
 ## Support and contact details
 
@@ -27,20 +27,17 @@ _This app is written in Javascript_
 
 ## Specs
 
-rule: User will input the size of their pizza in a text box.
+_Our program will allow user to select size of crust they would like, and our program will set 'base price' for each size pizza_
+* **example input** "small"
+* **example output** base price: $15
 
-rule: User can choose what topping to go on the pizza:
-example: Canadian bacon, or Bacon,or Sausage,or  pepperoni, or Steak
+_User can choose what toppings to go on their pizza, and our program will calculate price for the toppings toppings_
+* **example input** pepperoni, pineapple, olives
+* **example output** $3
 
-rule: when toppings are chosen, subtotal is calculated as the pizza is built.
-
-rule: User can only choose up to 5 toppings go on the pizza:
-if select more-return or alert user there a
-
-rule: when toppings are chosen, subtotal is calculated as the pizza is built.
-
-rule: final price of pizza will be dependent on the properties of the pizza chosen.
-example: bigger or more toppings-more expensive. small pizza and fewer toppings-less expensive
+_When user click our submit button, our program will calculate the pizza price and display to the webpage with price and details about the pizza order_
+* **example input** "small", "pepperoni"
+* **example output** your small pepperoni pizza will cost you $16
 
 ### License
 

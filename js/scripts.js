@@ -4,7 +4,14 @@ function Pizza(size, toppings) {
   this.price = 10;
 }
 
+function Contact(name, street, city){
+this.name = name;
+this.street = street;
+this.city = city;
+}
+
 var order = [];
+var address = [];
 
 Pizza.prototype.SizeOfPizzaToPrice = function() {
   if (this.size === "small") {
