@@ -6,15 +6,15 @@
 
 ## Description
 
-_This application is for a our Epicodus week 4 test. This application will allow people to custom order a pizza, see the price of that pizza and see what they are getting_
+_This application is for a our Epicodus Intro week 4 code review. This application will allow people to custom order a pizza, see the price of that pizza and see what they are getting on that pizza_
 
 ## Setup/Installation Requirements
 
-* _This application should be opened in a current web browser_
+* _To open this application, please clone project from github at https://github.com/meyerjac/Custom-Pizza-Order_
 
 ## Known Bugs
 
-_At this point, you cannon build a second pizza and make the UI look good_
+_At this point, you cannot build a second pizza and make the UI look good_
 
 ## Support and contact details
 
@@ -23,7 +23,7 @@ jackson.meyer7@gmail.com_
 
 ## Technologies Used
 
-_This app is written in Javascript_
+_This app is written in Javascript, using jQuery, CSS and HTML5_
 
 ## Specs
 
